@@ -32,6 +32,7 @@ A123_Model/
 |------|-------------|
 | `A123_data_interpolated.xlsx` | Experimental voltage vs. time curves (1C, 1D, 2C, 3C, 4C) interpolated at 1 s intervals |
 | `HPPC_data.xlsx` | Hybrid Pulse Power Characterisation (HPPC) test data |
+| `OCP_Interpolated_Prada2012.xlsx` | Prada 2012 extracted LFP and Gr - Lithiation and Delithiation data |
 
 ## OCP Estimation
 
@@ -41,16 +42,23 @@ A123_Model/
 | `MSMR OCP estimation.ipynb` | Notebook covering the MSMR parameter fit for both LFP and graphite OCP |
 | `msmr_opt.py` | Script for optimising MSMR gallery variables for a given electrode |
 
-## Model Evolution
+## Model version 1
 
-The DFN model was developed incrementally across four versions:
+The Initial DFN model was developed incrementally across four versions:
 
 | Version | File | Description |
 |---------|------|-------------|
-| v1 | `DFN_a123_01.py` | Baseline model with literature parameters |
-| v2 | `DFN_a123_02.py` | Manual adjustment of thermodynamic and transport parameters |
-| v3 | `DFN_a123_OCV_optimized.py` | MSMR-based graphite OCP and refined LFP OCP for improved full-cell OCV fit |
-| v4 | `DFN_a123_final_opt.py` | Automated optimisation of electrolyte, diffusivity, and kinetic parameters via `dfn_optimizer.py` |
+| v1 | `DFN_a123_01.ipynb` | Baseline model with literature parameters |
+| v2 | `DFN_a123_02.ipynb` | Manual adjustment of thermodynamic and transport parameters |
+| v3 | `DFN_a123_OCV_optimized.ipynb` | MSMR-based graphite OCP and refined LFP OCP for improved full-cell OCV fit |
+| v4 | `DFN_a123_final_opt.ipynb` | Automated optimisation of electrolyte, diffusivity, and kinetic parameters via `dfn_optimizer.py` |
+
+## Model version 2
+
+| Version | File | Description |
+|---------|------|-------------|
+| v5 | `A123_DFN_2.ipynb` | Best HPPC results after considering prada2012 OCP for lithiation and delithiation OCP's, adjusting electrode conductivity, bruggeman coefficient and other material as well as kinetic parameters |
+| v6 | `A123_DFN_3.ipynb` | Best Crate results by adjusting OCP with current sigmoid hystersis model on both electrodes |
 
 ## Optimisation Outputs
 
