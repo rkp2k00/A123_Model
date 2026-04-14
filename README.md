@@ -44,7 +44,7 @@ The DFN model was developed incrementally across four versions:
 | v1 | `DFN_a123_01.py` | Baseline model with literature parameters |
 | v2 | `DFN_a123_02.py` | Manual adjustment of thermodynamic and transport parameters |
 | v3 | `DFN_a123_OCV_optimized.py` | MSMR-based graphite OCP and refined LFP OCP for improved full-cell OCV fit |
-| v4 | `DFN_a123_latest_opt.py` | Automated optimisation of electrolyte, diffusivity, and kinetic parameters via `dfn_optimizer.py` |
+| v4 | `DFN_a123_final_opt.py` | Automated optimisation of electrolyte, diffusivity, and kinetic parameters via `dfn_optimizer.py` |
 
 ## Optimisation Outputs
 
