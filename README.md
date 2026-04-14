@@ -18,6 +18,10 @@ A123_Model/
     ├── python_files/
     ├── optimization_fit.png
     └── optimised_params.json
+└── noteboooks_version_2/
+    └── A123_DFN2 (best HPPC result so far)/
+    └── A123_DFN3 (best crate results with optimizing the OCP's)
+
 ```
 
 ## Data
